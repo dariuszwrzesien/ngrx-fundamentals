@@ -23,7 +23,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
     StoreDevtoolsModule.instrument({
       name: 'My Demo Store DevTools',
       maxAge: 25,
-      // logOnly: environment.production,
+      logOnly: environment.production,
     }),
   ],
   providers: [],
