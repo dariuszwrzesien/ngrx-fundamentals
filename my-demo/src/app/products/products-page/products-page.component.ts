@@ -26,10 +26,6 @@ export class ProductsPageComponent {
     this.store.subscribe((store) => console.log(store));
   }
 
-  ngOnInit() {
-    this.store.dispatch(ProductsPageActions.loadProducts());
-  }
-
   toggleShowProductCode(event: { d: string }) {
     console.log(event, 'toggleShowProductCode');
     this.store.dispatch(ProductsPageActions.toggleShowProductCode());

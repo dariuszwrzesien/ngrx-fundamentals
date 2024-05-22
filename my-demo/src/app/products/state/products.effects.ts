@@ -13,6 +13,10 @@ import { ProductsAPIActions, ProductsPageActions } from './products.actions';
 
 @Injectable()
 export class ProductEffects {
+  ngrxOnInitEffects() {
+    return ProductsPageActions.loadProducts();
+  }
+
   constructor(
     private actions$: Actions,
     private productsService: ProductsService
